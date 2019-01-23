@@ -1,0 +1,19 @@
+{
+  "name": "@rndm/render-plugin-compare-versions",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "description": "RNDM Render Plugin: Compare Versions. Version comparison functionality for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-render-plugin-compare-versions#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render-plugin-compare-versions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render-plugin-compare-versions/issues"
+  },
+  "dependencies": {
+    "compare-versions": "^3.4.0"
+  }
+}
