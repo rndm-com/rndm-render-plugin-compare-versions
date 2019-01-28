@@ -4,6 +4,8 @@
 
 This plugin provides version comparison functionality for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
 
+It is a RNDM Wrapper around the commonly used library [Compare Versions](https://github.com/omichelsen/compare-versions#readme).
+
 ## Installation
 
 If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
