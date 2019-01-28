@@ -1,0 +1,107 @@
+{
+  "type": "react-native-View",
+  "props": {
+    "style": {
+      "padding": 10,
+      "backgroundColor": "#000000",
+      "width": 200
+    },
+    "children": [{
+      "type": "react-native.TextInput",
+      "props": {
+        "placeholder": "Version 1",
+        "style": {
+          "margin": 10,
+          "padding": 5,
+          "backgroundColor": "#ffffff"
+        },
+        "middleware": [{
+          "middleware": "redux.connect",
+          "args": [
+            [{
+              "from": "rndm.compare_versions_1",
+              "to": "value",
+              "default": ""
+            }],
+            [{
+              "prop": "onChangeText",
+              "action": {
+                "type": "RNDM_DID_SET_VERSION_1",
+                "compare_versions_1": {
+                  "type": "_.identity",
+                  "isFunc": true,
+                  "args": ["$.args.0"],
+                  "execute": [true]
+                }
+              }
+            }]
+          ]
+        }]
+      }
+    }, {
+      "type": "react-native.TextInput",
+      "props": {
+        "placeholder": "Version 2",
+        "style": {
+          "margin": 10,
+          "padding": 5,
+          "backgroundColor": "#ffffff"
+        },
+        "middleware": [{
+          "middleware": "redux.connect",
+          "args": [
+            [{
+              "from": "rndm.compare_versions_2",
+              "to": "value",
+              "default": ""
+            }],
+            [{
+              "prop": "onChangeText",
+              "action": {
+                "type": "RNDM_DID_SET_VERSION_2",
+                "compare_versions_2": {
+                  "type": "_.identity",
+                  "isFunc": true,
+                  "args": ["$.args.0"],
+                  "execute": [true]
+                }
+              }
+            }]
+          ]
+        }]
+      }
+    }, {
+      "type": "react-native.Text",
+      "props": {
+        "style": {
+          "marginTop": 10,
+          "color": "#ffffff"
+        },
+        "children": [{
+          "type": "react-native.Text",
+          "props": {
+            "children": "Output: "
+          }
+        }, {
+          "type": "react-native.Text",
+          "props": {
+            "middleware": [{
+              "middleware": "redux.connect",
+              "args": [
+                [{
+                  "to": "children",
+                  "default": {
+                    "isFunc": true,
+                    "type": "compare-versions.compare",
+                    "args": ["$.state.rndm.compare_versions_1", "$.state.rndm.compare_versions_2"],
+                    "execute": [true]
+                  }
+                }]
+              ]
+            }]
+          }
+        }]
+      }
+    }]
+  }
+}

@@ -27,6 +27,32 @@ import '@rndm/render-plugin-compare-versions';
 
 The Compare Version Plugin transforms the compare-versions package into a serialisable function.
 
-### Parse
+### Compare
 
+The usage of Compare versions is very simple. It takes two version strings and provides feedback to the user as to the ordering of those versions. i.e.
 
+v1 = "1.2.3"
+v2 = "3.2.1"
+Result = -1
+
+**Example** 
+
+```json
+{
+    "type": "react-native.TouchableOpacity",
+    "props": {
+        "onPress": {
+            "isFunc": true,
+            "type": "compare-versions.compare",
+            "args": ["1.2.3", "3.2.1"]
+        },
+        "children": {
+            "type": "react-native.Text",
+            "props": {
+                "children": "Touch Me"
+            }
+        }
+    }
+}
+```
+For a more complete example checkout the included json in the example folders, which makes use of the [Redux](https://github.com/rndm-render-plugin-redux) plugin.
