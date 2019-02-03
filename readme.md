@@ -1,14 +1,14 @@
-# RNDM Render Plugin: Compare Versions
+# [RNDM](https://www.rndm.com) Render Plugin: Compare Versions
 
 ## About
 
-This plugin provides version comparison functionality for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
+This plugin provides version comparison functionality for the [RNDM Render package](https://www.rndm.com/docs/rndm-render).
 
 It is a RNDM Wrapper around the commonly used library [Compare Versions](https://github.com/omichelsen/compare-versions#readme).
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://www.rndm.com/docs/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
 
 ### From NPM
 
@@ -58,3 +58,5 @@ Result = -1
 }
 ```
 For a more complete example checkout the included json in the example folders, which makes use of the [Redux](https://github.com/rndm-render-plugin-redux) plugin.
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
